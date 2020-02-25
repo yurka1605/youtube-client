@@ -1,0 +1,29 @@
+:host {
+    .sorting {
+        height: 50px;
+        display: flex;
+        align-items: center;
+        font-size: 12px;
+        line-height: 14px;
+        background: #E5E5E5;
+
+        &__title {
+            color: #929292;
+            margin-right: 10px;
+        }
+
+        &__option {
+            margin-right: 15px;
+            text-decoration-line: underline;
+            color: #2F80ED;
+            cursor: pointer;
+        }
+
+        &__input-opt {
+            margin-left: 10px;
+            background-color: #fff;
+            border: 0;
+            width: 150px;
+        }
+    }
+}

@@ -15,6 +15,7 @@ export interface SearchItemSnippet {
     channelTitle: string;
     tags: string[];
     categoryId: string;
+    defaultLanguage?: string;
     liveBroadcastContent: string;
     localized: SearchItemSnippetLocalized;
     defaultAudioLanguage: string;

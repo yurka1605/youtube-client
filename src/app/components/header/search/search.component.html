@@ -1,1 +1,8 @@
-<p>search works!</p>
+<input
+    class="search__input" 
+    type="text" 
+    name="search"
+    placeholder="What are you want to find out?"
+    [(ngModel)]="value"
+>
+<div class="search__btn" (click)="value ? onChange.emit(value) : false">Search</div>

@@ -1,1 +1,18 @@
-<p>search-results works!</p>
+<section class="search__results container">
+    <div 
+        class="row" 
+        [class.full-height]="searchResults?.length === 0"
+    >
+        <ng-container *ngIf="searchResults?.length > 0; else notFound">
+            <div *ngFor="let item of searchResults" class="card col-lg-3">
+                <app-search-item [item]="item"></app-search-item>
+            </div>
+        </ng-container>
+        <ng-template #notFound>
+            <div *ngIf="searchResults" class="not-found">
+                <img src="../../../assets/404.png" alt="404">
+                <span>Sorry, smth went wrong((</span>
+            </div>
+        </ng-template>
+    </div>
+</section>

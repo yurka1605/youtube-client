@@ -1,0 +1,15 @@
+<div class="sorting">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3"></div>
+            <div class="col-lg-6">
+                <span class="sorting__title">Sorting by:</span>
+                <span (click)="sortingBy(0)" class="sorting__option">date</span>
+                <span (click)="sortingBy(1)" class="sorting__option">count of views</span>
+                <span class="sorting__input-title">by word or sentance</span>
+                <input (change)="onInputBy.emit($event.value)" class="sorting__input-opt" type="text">
+            </div>
+            <div class="col-lg-3"></div>
+        </div>
+    </div>
+</div>

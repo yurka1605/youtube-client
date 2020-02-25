@@ -1,1 +1,15 @@
-<p>header works!</p>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-3"></div>
+        <div class="header__search col-lg-6">
+            <img class="header__logo" src="../../../assets/logo.svg" alt="Logotype">
+            <app-search 
+                (onChange)="onChange.emit($event)">
+            </app-search>
+            <div (click)="toggleSortingShow.emit()" class="sorting__btn">
+                <img src="../../../assets/sorting-btn.svg" alt="sorting">
+            </div>
+        </div>
+        <app-authentication class="col-lg-3 header__authentication"></app-authentication>
+    </div>
+</div>
